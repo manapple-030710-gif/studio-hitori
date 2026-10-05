@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f7f4">
+    <meta name="description" content="Studio.HITORI — 媒体を限定せず、存在しないものをかたちにする小さなデジタルスタジオ。">
+    <title>Studio.HITORI — Digital Studio</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <script src="works-data.js" defer></script>
+    <script src="exhibitions-data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#works">作品へ移動</a>
+    <header class="site-header">
+      <a class="wordmark" href="#entrance" aria-label="Studio.HITORI トップへ">Studio.HITORI</a>
+      <nav aria-label="メインナビゲーション">
+        <a href="#works">Works</a>
+        <a href="#exhibitions">Exhibitions</a>
+        <a href="#about">About</a>
+        <a href="archive.html">Archive</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="entrance" id="entrance" aria-labelledby="entrance-title">
+        <div class="entrance-content">
+          <h1 id="entrance-title">Studio.HITORI</h1>
+          <p class="studio-type">Digital Studio</p>
+          <p class="entrance-phrase">存在しないものを、つくる。</p>
+        </div>
+        <a class="entrance-guide" href="#works"><span>Works</span><span class="guide-line" aria-hidden="true"></span></a>
+      </section>
+      <section class="works section-shell" id="works" aria-labelledby="works-title">
+        <div class="section-heading"><h2 id="works-title">Works</h2><span class="section-note">Featured Works</span></div>
+        <p class="visually-hidden" id="works-status" role="status" aria-live="polite"></p>
+        <div class="series-index" id="series-index" role="navigation" aria-label="作品シリーズの索引"></div>
+        <div class="works-gallery" id="works-gallery" data-selection="featured"></div>
+        <a class="archive-link view-all-works" href="works.html">View all works ↗</a>
+        <noscript><p class="fallback-note">作品の表示にはJavaScriptを有効にしてください。</p></noscript>
+      </section>
+      <section class="exhibitions section-shell" id="exhibitions" aria-labelledby="exhibitions-title">
+        <div class="section-heading"><h2 id="exhibitions-title">Exhibitions</h2><span class="section-note">存在しない展示会</span></div>
+        <div id="exhibitions-list"></div>
+        <a class="archive-link" href="archive.html">Archive ↗</a>
+        <noscript><p class="fallback-note">展示情報の表示にはJavaScriptを有効にしてください。</p></noscript>
+      </section>
+      <section class="about section-shell" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <div class="about-content">
+          <p class="creator-name">MANA</p>
+          <p class="creator-role">Creator</p>
+          <p class="about-description">Studio.HITORIは、媒体を限定せず、<br>「存在しないもの」をかたちにする<br>小さなデジタルスタジオです。</p>
+          <p class="about-domain">HITORI — 存在しない場所で、ひとり。<br>Studio.HITORIの作品公開・体験領域。</p>
+        </div>
+      </section>
+      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <div class="contact-links">
+          <!-- Contact URL：お問い合わせ先の変更は次のhrefを編集してください。 -->
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNJFn8cPRSwvI3nxo_hOK5r4I_l6AfgiNju_32wILmopnOow/viewform?usp=publish-editor">お問い合わせはこちら</a>
+          <!-- 将来のSNSリンクはこの要素内に追加します。 -->
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><a href="#entrance">Studio.HITORI</a><span>© <span id="copyright-year">2026</span> Studio.HITORI</span></footer>
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="ページ上部へ戻る" disabled>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true" focusable="false">
+        <path d="M12 19V5M6 11l6-6 6 6" />
+      </svg>
+    </button>
+  </body>
+</html>

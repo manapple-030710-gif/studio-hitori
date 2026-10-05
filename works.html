@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f7f4">
+    <meta name="description" content="Studio.HITORI — 媒体を限定せず、存在しないものをかたちにする小さなデジタルスタジオ。">
+    <title>Works | Studio.HITORI</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <script src="works-data.js" defer></script>
+    <script src="exhibitions-data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#works-title">作品へ移動</a>
+    <header class="site-header">
+      <a class="wordmark" href="index.html#entrance" aria-label="Studio.HITORI トップへ">Studio.HITORI</a>
+      <nav aria-label="メインナビゲーション">
+        <a href="works.html" aria-current="page">Works</a>
+        <a href="index.html#exhibitions">Exhibitions</a>
+        <a href="index.html#about">About</a>
+        <a href="archive.html">Archive</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+    <main class="works-index section-shell">
+      <h1 class="page-title" id="works-title">Works</h1>
+      <div class="works-filters" id="works-filters" role="group" aria-label="作品シリーズで絞り込む"></div>
+      <p class="visually-hidden" id="works-status" role="status" aria-live="polite"></p>
+      <div class="works-gallery works-gallery--archive" id="works-gallery"></div>
+      <noscript><p class="fallback-note">作品の表示にはJavaScriptを有効にしてください。</p></noscript>
+    </main>
+    <footer class="site-footer"><a href="index.html#entrance">Studio.HITORI</a><span>© <span id="copyright-year">2026</span> Studio.HITORI</span></footer>
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="ページ上部へ戻る" disabled>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true" focusable="false">
+        <path d="M12 19V5M6 11l6-6 6 6" />
+      </svg>
+    </button>
+  </body>
+</html>
